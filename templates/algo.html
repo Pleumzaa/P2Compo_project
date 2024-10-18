@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm</title>
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font: Poppins for body, Playfair Display for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Your existing styles here */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #bb1900, #fd6d01, #ffb000);
+            color: #FFFFFF;
+            overflow: hidden;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        /* Container and Box styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 50px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logout-btn {
+            padding: 15px 45px;
+            font-size: 20px;
+            color: #FFFFFF;
+            background-color: #C0392B;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            position: fixed;
+            bottom: 40px;
+            z-index: 10;
+        }
+
+        .logout-btn:hover {
+            background-color: #E74C3C;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+            transform: translateY(-6px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Algorithm</h1>
+
+    <div class="container">
+        <!-- Box: Attendance Checking -->
+        <div class="box" onclick="handleAttendanceClick()">
+            <i class="fas fa-check-circle"></i>
+            Attendance Checking
+        </div>
+    </div>
+
+    <!-- Logout Button -->
+    <button class="logout-btn" onclick="confirmLogout()">Log Out</button>
+
+    <script>
+        // Function to handle Attendance Checking click event
+        function handleAttendanceClick() {
+            window.location.href = 'checkAalgo.html'; // Redirect to checkAalgo.html
+        }
+
+        // Function to confirm logout action
+        function confirmLogout() {
+            window.location.href = 'index.html'; // Redirect to index.html
+        }
+    </script>
+
+</body>
+</html>

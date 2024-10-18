@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+    font-family: 'Playfair Display', serif; /* Elegant, high-end serif font */
+    background: linear-gradient(135deg, #FFD700, #FF4500); /* Higher contrast gradient: bright gold to deep orange-red */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container with a textured finish */
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light opacity for modern look */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid #DAA520; /* Thicker gold border for emphasis */
+    max-width: 800px; /* Increased max-width for larger images */
+    width: 100%;
+    backdrop-filter: blur(10px); /* Soft blur effect for high-end vibe */
+}
+
+/* Heading styling */
+h1 {
+    font-size: 3.5em; /* Slightly increased font size for emphasis */
+    color: #D35400; /* Refined deep orange */
+    margin-bottom: 40px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    font-weight: 700;
+}
+
+/* Selection area */
+.selection {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px; /* Added padding for more spacing */
+}
+
+/* Individual role styling */
+.role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Role images with larger size and framing */
+.role-image {
+    width: 220px; /* Increased image size */
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #DAA520; /* Gold trim */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    margin-bottom: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.role-image:hover {
+    transform: scale(1.08); /* Slightly increased zoom on hover */
+}
+
+/* Button with luxurious 3D effect */
+.role-button {
+    background: linear-gradient(145deg, #E67E22, #F39C12);
+    color: white;
+    border: none;
+    padding: 18px 35px; /* Increased padding for a bigger button */
+    font-size: 1.6em; /* Increased button font size */
+    font-family: 'Montserrat', sans-serif; /* Modern sans-serif for contrast */
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for more depth */
+    position: relative;
+    z-index: 1;
+}
+
+.role-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    border: 2px solid #DAA520; /* Gold outer border for luxury */
+    z-index: -1;
+}
+
+.role-button:hover {
+    background: linear-gradient(145deg, #D35400, #E67E22);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.4); /* Deeper shadow for more impact */
+    transform: translateY(-6px); /* Increased 3D lift on hover */
+}
+
+/* Focused button with elegant glow */
+.role-button:focus {
+    outline: none;
+    box-shadow: 0 0 20px 7px rgba(218, 165, 32, 0.8); /* Stronger gold glow on focus */
+}
+
+/* Animation for smooth transitions */
+.role-button, .role-image {
+    transition: all 0.3s ease;
+}

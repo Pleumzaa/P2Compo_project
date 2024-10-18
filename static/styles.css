@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Importing Poppins font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Updated font */
+}
+
+body {
+    background-color: #D15620;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    width: 70%;
+    max-width: 900px;
+    background-color: #f6d4b5;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-box {
+    padding: 40px;
+    background: linear-gradient(135deg, #FF8008, #FFC837); /* Orange gradient background */
+    border-radius: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    backdrop-filter: blur(10px)
+}
+
+h1 {
+    color: #3d1308;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700; /* Bold title */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    color: #3d1308;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 700; /* Bold labels */
+}
+
+.input-group input {
+    width: 150%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d1308; /* Dark background for input */
+    color: #ffffff; /* White text */
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2); /* Inner shadow */
+    font-weight: 400; /* Light but rounded text for input fields */
+}
+
+button {
+    width: 150%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f16322; /* Bright orange button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700; /* Bold text for button */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+button:hover {
+    background-color: #f16322;
+}
+
+.image-section {
+    width: 55%;
+    background-color: #f6d4b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-section img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
